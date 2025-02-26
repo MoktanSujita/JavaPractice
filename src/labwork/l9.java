@@ -9,7 +9,6 @@ public class l9 {
         scanner.close();
         in =in.toLowerCase();
         int count=0;
-
         for (int i = 0; i < in.length(); i++)
          {
             char ch=in.charAt(i);
