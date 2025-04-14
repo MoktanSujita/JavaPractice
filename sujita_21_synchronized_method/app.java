@@ -1,5 +1,4 @@
 public class app {
-
     public static void main(String[] args) throws Exception{
         Table obj=new Table();
         Mythread1 t1=new Mythread1(obj);
