@@ -1,5 +1,4 @@
 public class App {
-
     public static void main(String[] args) {
         Customer c=new Customer();
         Thread t1=new Thread()
@@ -22,8 +21,8 @@ public class App {
 }
 class Customer
 {
-    int amount=100000;
-    synchronized void withdrawn(int amount)
+    int amount=100000;//available balance
+    synchronized void withdrawn(int amount)//amount to be withdrawn
     {
         if(this.amount<amount)
         {
@@ -38,7 +37,7 @@ class Customer
        amount-=this.amount;
        System.out.println("Amount withdrawn......");
     }
-    synchronized void deposit(int amount)
+    synchronized void deposit(int amount)//amount to be deposited
     {
         System.out.println("Amount being deposited......");
         amount+=this.amount;
