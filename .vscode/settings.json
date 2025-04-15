@@ -2,7 +2,7 @@
     "java.project.sourcePaths": [
         "src/labwork",
         "src",
-        "lab_00_database/src"
+        "sujita_23_jagged_array/src"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
