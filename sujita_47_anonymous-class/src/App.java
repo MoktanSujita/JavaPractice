@@ -1,7 +1,7 @@
 public class App {
     public static void main(String[] args) {
         Message m=new Message() {
-           void display()
+           public void display()
            {
             System.out.println("Anonymous inner class using abstraction");
            } 
@@ -9,7 +9,9 @@ public class App {
         m.display();
     }
 }
-
-abstract class Message {
-    abstract void display();
+abstract class Messages
+{
+   abstract void display();
+}
+abstract class Message extends Messages {
 }
